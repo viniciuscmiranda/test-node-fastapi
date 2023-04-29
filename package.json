@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx src/server.ts",
-    "build": "prsima generate && tsup src",
+    "build": "tsup src",
+    "postinstall": "prisma generate",
     "start": "node dist/server.js"
   },
   "engines": {
